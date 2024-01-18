@@ -19,6 +19,13 @@ pub fn main() {
     // read the input
     let a: u64 = env::read();
     let b: u64 = env::read();
+    // module 0x1::math {
+    //     #[view]
+    //     public fun sum(a: u64, b :u64):u64  {
+    //          return (a + b)
+    //     }
+    // }
+    // move build to get blob
     let blob = hex::decode("a11ceb0b0600000006010002030205050706070d090816100c260c00000001000100020303010300046d6174680373756d000000000000000000000000000000010001000002040b000b01160200").unwrap();
     let mut storage = InMemoryStorage::new();
     let module_id = ModuleId::new(TEST_ADDR, Identifier::new("math").unwrap());
