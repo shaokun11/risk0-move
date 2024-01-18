@@ -1,0 +1,17 @@
+[package]
+name = "method"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+# If you want to try (experimental) std support, add `features = [ "std" ]` to risc0-zkvm
+risc0-zkvm = { version = "0.19.1", default-features = false, features = ["std"] }
+move-vm-runtime = {git="https://github.com/shaokun11/move-language", rev = "23c84b6de21b18d53ad8bdd471484813e06b10d0" }
+move-vm-test-utils = {git="https://github.com/shaokun11/move-language", rev = "23c84b6de21b18d53ad8bdd471484813e06b10d0" }
+move-vm-types = {git="https://github.com/shaokun11/move-language", rev = "23c84b6de21b18d53ad8bdd471484813e06b10d0" }
+move-core-types = {git="https://github.com/shaokun11/move-language", rev = "23c84b6de21b18d53ad8bdd471484813e06b10d0" }
+hex = "0.4.3"
+tempfile = "3.9.0"
+anyhow = "1.0.79"
