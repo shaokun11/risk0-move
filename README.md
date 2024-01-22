@@ -12,7 +12,6 @@ Overview][zkvm-overview].
 First, make sure [rustup] is installed. The
 [`rust-toolchain.toml`][rust-toolchain] file will be used by `cargo` to
 automatically install the correct version.
-
 To build all methods and execute the method within the zkVM, run the following
 command:
 
