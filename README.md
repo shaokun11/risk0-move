@@ -47,7 +47,7 @@ BONSAI_API_KEY="YOUR_API_KEY" BONSAI_API_URL="BONSAI_URL" cargo run
 ```
 
 ## How to create a project based on this template
-
+ 
 Search this template for the string `TODO`, and make the necessary changes to
 implement the required feature described by the `TODO` comment. Some of these
 changes will be complex, and so we have a number of instructional resources to
